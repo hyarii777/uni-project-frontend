@@ -1,70 +1,113 @@
-/* TableTypes.css */
+/* tabletype.css */
+.form-container {
+  max-width: 45%;
+  margin-top: 5%;
+  margin-left: 25%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  padding: 1%;
+}
+
+.form-container h1 {
+
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container .form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-container .form-grid label {
+  width: 40%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-container .form-grid label span {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input, 
+.form-container select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-container input:focus, 
+.form-container select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.form-container .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
 
 .table-container {
-    font-family: Arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  table {
-    border: 2px solid #4CAF50; /* Green border */
-    width: 90%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the table */
-  }
-  
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 12px; /* Increase padding for better readability */
-  }
-  
-  th {
-    background-color: #4CAF50; /* Green background for header */
-    color: white; /* White text color for header */
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #ddd;
-  }
-  
-  .form-container {
-    margin: 20px;
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-  }
-  
-  .form-container label {
-    display: block;
-    margin-bottom: 12px; /* Increase margin for better spacing */
-  }
-  
-  .form-container input[type="radio"] {
-    margin-right: 10px; /* Increase margin for better spacing */
-  }
-  
-  .form-container input[type="text"] {
-    margin-bottom: 20px; /* Increase margin for better spacing */
-    padding: 12px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    width: 100%;
-  }
-  
-  .form-container button {
-    padding: 12px 24px; /* Increase padding for better button size */
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .form-container button:hover {
-    background-color: #45a049;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-container th, 
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  color: #1163bd;}
+
+.table-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.form-container button {
+  display: inline-block;
+  width: 50%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #033870;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.form-container button:active {
+  transform: translateY(-1px);
+}
+
+
+
+.table-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -113,7 +113,7 @@ const TableTypes = () => {
   return (
     <div className="form-container">
       {!showForm && (
-        <div>
+        <div className="form-grid">
           <label>
             Student Number:
             <input
@@ -223,7 +223,7 @@ const TableTypes = () => {
         <>
           <h1>{currentTableType.name}</h1>
           {errorMessage && <div className="error-message">{errorMessage}</div>}
-          <form
+          <form className='table-form'
             onSubmit={(e) => {
               e.preventDefault();
               handleSubmit();
